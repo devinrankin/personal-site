@@ -12,7 +12,6 @@
 
 
 .card {
-    padding-left: 12rem;
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
@@ -50,4 +49,16 @@
 
 .icon:hover {
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .card {
+        padding-left: 12rem;
+    }
 }
