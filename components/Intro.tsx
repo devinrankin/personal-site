@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from '../styles/Card.module.css'
+import styles from '../styles/Intro.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -21,9 +21,24 @@ const dropIn = {
     }
 }
 
+const slideIn = {
+    hidden: {
+        x: "100vw",
+    },
+    visible: {
+        x: "0vw",
+        transition: {
+            duration: 2,
+            type: 'spring',
+            damping: 15,
+            stiffness: 150,
+        }
+    }
+}
+
 export default function Intro({}: Props) {
   return (
-    <motion.div className={styles.card} variants={dropIn} initial="hidden" animate="visible">
+        <motion.div className={styles.card} variants={dropIn} initial="hidden" animate="visible">
         <p className={styles.intro}>hi, im <span className={styles.highlight}>devin</span>.</p>
         <p className={styles.intro}>a senior <span className={styles.highlight}>computer science</span> major</p>
         <p className={styles.intro}>at <span className={styles.highlight}>temple university</span>.</p>
