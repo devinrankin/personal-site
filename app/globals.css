@@ -3,9 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  font-size: 16px;
+  font-family: 'Cera Round';
+  font-weight: 700;
+  --text-primary: #ef6a80;
+  --text-secondary: #ececec;
+  --bg-primary: #23232e;
+  --bg-secondary: #141418;
+  --bg-temp: #141418;
+  --transition-speed: 600ms;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,12 +22,56 @@
   }
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--text-secondary)
+}
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background-color: var(--bg-primary);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: var(--text-primary);
+}
+
+::-moz-selection {
+  background: var(--text-primary);
+  color: var(--text-secondary);
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--text-secondary);
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #ececec;
+  border-radius: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
 }
