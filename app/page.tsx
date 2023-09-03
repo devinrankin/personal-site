@@ -1,12 +1,13 @@
-import Navbar from "../components/Navbar"
-import Card from "../components/Card"
+import Navbar from "@/components/Navbar"
+import Intro from "@/components/Intro"
+import About from "@/components/About"
 
 export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
       <main>
-        <Card></Card>
+          <Intro></Intro>
       </main>
     </div>
     

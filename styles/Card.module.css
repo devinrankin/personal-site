@@ -1,21 +1,9 @@
-@keyframes transitionIn {
-    from {
-        opacity: 0;
-        transform: translateY(-100%);
-    }
-    
-    to {
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
 
 
 .card {
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    animation: transitionIn 2s;
 }
 
 .intro {
@@ -53,12 +41,12 @@
 
 @media only screen and (max-width: 600px) {
     .card {
-        padding: 0;
+        margin-left: 0;
     }
 }
 
 @media only screen and (min-width: 600px) {
     .card {
-        padding-left: 12rem;
+        margin-left: 12rem;
     }
 }

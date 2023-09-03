@@ -60,7 +60,7 @@
     display: none;
 }
 
-.navbar:hover .long{
+.navbar:hover .long {
     display: inline;
     transition: 200ms ease;
 }
