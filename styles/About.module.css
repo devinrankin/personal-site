@@ -1,11 +1,23 @@
-@media only screen and (max-width: 600px) {
-    .about {
-        padding: 0;
-    }
+.about {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
-@media only screen and (min-width: 600px) {
-    .about {
-        padding-left: 12rem;
-    }
+.title, .titleWord2 {
+    font-size: 48px;
+}
+
+.title {
+    display: block;
+    color: var(--text-secondary);
+}
+
+.titleWord2 {
+    color: var(--text-primary);
+}
+
+.content {
+    padding-left: 15rem;
+    padding-top: 5rem;
 }
