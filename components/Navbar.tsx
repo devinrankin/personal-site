@@ -20,7 +20,7 @@ const hoverEffect : Variants = {
 export default function Navbar({}: Props) {
   return (
     <nav className={styles.navbar}>
-        <ul className={styles.navi}>
+        <ul className={styles.navList}>
             <li className={styles.logo}>
                 <h1 className={styles.short}>dr</h1>
                 <h1 className={styles.long}>devin rankin</h1>
