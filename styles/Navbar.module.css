@@ -40,6 +40,8 @@
 .linkText {
     display: none;
     margin-left: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .link svg {
@@ -63,6 +65,8 @@
 .logo {
     user-select: none;
     letter-spacing: 0.2ch;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .long {
@@ -84,7 +88,7 @@
         display: none;
     }
 
-    .navi {
+    .navList {
         flex-direction: row;
     }
 

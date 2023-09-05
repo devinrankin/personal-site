@@ -9,11 +9,15 @@ type Props = {}
 const slideIn = {
     visible: {
         opacity: 1,
-        translateX: '0vw',
+        scale: 1.1,
+        transition: {
+            type: "spring",
+            damping: 25,
+            stiffness: 300,
+        },
     },
     hidden: {
-        opacity: 0,
-        translateX: '100vw',
+        scale: 0,
     }
 }
 
@@ -21,7 +25,7 @@ export default function About({}: Props) {
   return (
     <section className={styles.about} id="about">
         <div className={styles.content}>
-            <motion.div className={styles.title} variants={slideIn} initial="hidden" whileInView="visible">about <span className={styles.titleWord2}>me</span>
+            <motion.div className={styles.title} variants={slideIn} initial="hidden" animate="visible">about <span className={styles.titleWord2}>me</span>
             </motion.div>
         </div>
     </section>
