@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 200vh;
 }
 
 .title, .titleWord2 {
@@ -13,11 +13,7 @@
     color: var(--text-secondary);
 }
 
-.titleWord2 {
-    color: var(--text-primary);
-}
-
 .content {
-    padding-left: 15rem;
+    margin-left: 15rem;
     padding-top: 5rem;
 }

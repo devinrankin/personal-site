@@ -10,13 +10,12 @@
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
-  --bg-temp: #141418;
   --transition-speed: 600ms;
 }
 
 html {
-  scroll-behavior: smooth;
   overflow-x: hidden;
+  scroll-behavior: smooth!important;
 }
 
 @media (prefers-color-scheme: dark) {

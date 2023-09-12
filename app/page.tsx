@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar"
+import Navbar from "@/components/Navbar/Navbar"
 import Intro from "@/components/Intro"
-import About from "@/components/About"
+import About from "@/components/about/About"
 
 export default function Home() {
   return (
