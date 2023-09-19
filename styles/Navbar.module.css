@@ -1,8 +1,7 @@
 .navbar {
     position: fixed;
     background-color: var(--bg-primary);
-    transition: 200ms ease;
-    border-right: 2px solid var(--text-primary); 
+    transition: 200ms ease; 
 }
 
 .navList {
@@ -102,6 +101,7 @@
         top: 0;
         width: 5rem;
         height: 100vh;
+        border-right: 2px solid var(--text-primary);
     }
 
     .navbar:hover {

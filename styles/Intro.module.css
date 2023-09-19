@@ -13,7 +13,7 @@
 
 .intro {
     width: 100%;
-    font-size: 48px;
+    font-size: 3.7vw;
     display: block;
 }
 
@@ -45,13 +45,18 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
+    .content {
         margin-left: 0;
+        width: 100%;
+    }
+    .intro {
+        font-size: 10vw;
+        white-space: normal;
     }
 }
 
 @media only screen and (min-width: 600px) {
-    .card {
+    .content {
         margin-left: 12rem;
     }
 }

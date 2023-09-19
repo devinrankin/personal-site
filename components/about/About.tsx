@@ -17,7 +17,7 @@ const rightVariants = {
     },
     hidden: {
         opacity: 0,
-        x: -50,
+        x: "100vh",
     }
 }
 
@@ -38,9 +38,9 @@ const leftVariants = {
 export default function About({}: Props) {
   return (
     <section className={styles.about} id="about">
-        <div className='ml-60'>
+        <div className='sm:ml-60'>
             <motion.div 
-                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg w-1/2 text-secondary-color text-xl px-8 py-4'
+                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary-color text-xl px-8 py-4 md:w-1/2'
                 variants={rightVariants}
                 initial='hidden'
                 whileInView='visible'
@@ -53,7 +53,7 @@ export default function About({}: Props) {
                 </p>
             </motion.div>
             <motion.div 
-                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg w-1/2 mt-12 ml-32 text-secondary-color text-xl px-8 py-4'
+                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary-color text-xl px-8 py-4 mt-12 md:ml-32 md:w-1/2'
                 variants={leftVariants}
                 initial='hidden'
                 whileInView='visible'
@@ -62,7 +62,7 @@ export default function About({}: Props) {
                     interests
                 </h1>
                 <p className='pt-4 text-secondary'>
-                    currently i am interested in
+                    currently i am interested in 
                 </p>
             </motion.div>
         </div>
