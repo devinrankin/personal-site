@@ -12,12 +12,12 @@ const rightVariants = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1.2,
-        },
+            duration: 0.7,
+        }
     },
     hidden: {
         opacity: 0,
-        x: "100vh",
+        x: 50
     }
 }
 
@@ -26,12 +26,30 @@ const leftVariants = {
         opacity: 1,
         x: 0,
         transition: {
-            duration: 1.2,
-        },
+            duration: 0.7,
+        }
     },
     hidden: {
         opacity: 0,
-        x: 50,
+        x: 50
+    }
+}
+
+const createVariants = ( xInitial : number, xChange : number, duration : number ) => {
+    return {
+        visible: {
+            opacity: 1,
+            x: xChange,
+            transition: {
+                duration: duration,
+                delay: 0.2,
+                type: 'spring'
+            }
+        }, 
+        hidden: {
+            opacity: 0,
+            x: xInitial
+        }
     }
 }
 
@@ -41,7 +59,7 @@ export default function About({}: Props) {
         <div className='sm:ml-60'>
             <motion.div 
                 className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary-color text-xl px-8 py-4 md:w-1/2'
-                variants={rightVariants}
+                variants={createVariants(350, 0, 1.5)}
                 initial='hidden'
                 whileInView='visible'
                 viewport={{ once: true }}>
@@ -54,7 +72,7 @@ export default function About({}: Props) {
             </motion.div>
             <motion.div 
                 className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary-color text-xl px-8 py-4 mt-12 md:ml-32 md:w-1/2'
-                variants={leftVariants}
+                variants={createVariants(-350, 0, 0.7)}
                 initial='hidden'
                 whileInView='visible'
                 viewport={{ once: true }}>
@@ -62,8 +80,14 @@ export default function About({}: Props) {
                     interests
                 </h1>
                 <p className='pt-4 text-secondary'>
-                    currently i am interested in 
+                    currently interested in
                 </p>
+                <ul className='list-disc pl-8 text-secondary'>
+                    <li>web development</li>
+                    <li>machine learning</li>
+                    <li>user experience design</li>
+                    <li>cloud computing</li>
+                </ul>
             </motion.div>
         </div>
             
