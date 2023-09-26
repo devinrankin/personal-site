@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import styles from '../styles/Intro.module.css'
+import styles from './Intro.module.css'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 

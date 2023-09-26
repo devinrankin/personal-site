@@ -2,19 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  font-size: 16px;
-  font-family: 'Cera Round';
-  font-weight: 700;
-  --text-primary: #ef6a80;
-  --text-secondary: #ececec;
-  --bg-primary: #23232e;
-  --bg-secondary: #141418;
-  --transition-speed: 600ms;
+@layer base {
+  html {
+    --text-primary: #ef6a80;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+  }
+  @import 'styles/themes/light';
 }
 
 html {
   scroll-behavior: smooth!important;
+  font-size: 16px;
+  font-family: 'Cera Round';
+  font-weight: 700;
+  --transition-speed: 600ms;
 }
 
 @media (prefers-color-scheme: dark) {

@@ -8,7 +8,6 @@
 .content {
     display: flex;
     flex-direction: column;
-    margin: 15rem;
 }
 
 .intro {
@@ -57,6 +56,6 @@
 
 @media only screen and (min-width: 600px) {
     .content {
-        margin-left: 12rem;
+        margin: 15rem;
     }
 }

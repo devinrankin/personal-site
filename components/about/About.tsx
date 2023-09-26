@@ -1,8 +1,9 @@
 "use client"
 import React from 'react'
-import styles from '../../styles/About.module.css'
+import styles from '../About.module.css'
 import { easeIn, motion } from 'framer-motion'
 import Bold from '../Bold'
+import Card from '../Card/Card'
 
 
 type Props = {}
@@ -84,9 +85,42 @@ export default function About({}: Props) {
                 </p>
                 <ul className='list-disc pl-8 text-secondary'>
                     <li>web development</li>
+                    <li>ui/ux design</li>
+                    <li>computer networking</li>
                     <li>machine learning</li>
-                    <li>user experience design</li>
-                    <li>cloud computing</li>
+                </ul>
+            </motion.div>
+            <motion.div 
+                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary-color text-xl px-8 py-4 mt-12 md:ml-32 md:w-1/2'
+                variants={createVariants(200, -30, 0.7)}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true }}>
+                <h1 className='pt-4 text-primary font-black'>
+                    hobbies
+                </h1>
+                <ul className='list-disc pl-8 pt-4 text-secondary'>
+                    <li>video games</li>
+                    <li>anime</li>
+                    <li>manga</li>
+                    <li>music</li>
+                    <li>cooking</li>
+                </ul>
+            </motion.div>
+            <motion.div 
+                className='rounded-xl shadow-2xl flex flex-col bg-secondary-bg text-secondary text-xl px-8 py-4 mt-12 md:ml-32 md:w-1/2'
+                variants={createVariants(-200, 30, 0.7)}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true }}>
+                <h1 className='pt-4 text-primary font-black'>
+                    experience
+                </h1>
+                <ul className='list-disc pl-8 pt-4 text-secondary'>
+                    <li>teaching assistant for introduction to java at <Bold>temple university</Bold></li>
+                    <li>software engineer intern at <Bold>coventry</Bold></li>
+                    <li>peer tutor at <Bold>temple university</Bold></li>
+                    <li>teaching assistant for low-level system programming at <Bold>temple university</Bold></li>
                 </ul>
             </motion.div>
         </div>

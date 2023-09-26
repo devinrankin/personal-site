@@ -1,7 +1,7 @@
 .navbar {
     position: fixed;
     background-color: var(--bg-primary);
-    transition: 200ms ease; 
+    transition: 150ms ease; 
 }
 
 .navList {
