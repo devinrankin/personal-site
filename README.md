@@ -1,1 +1,1 @@
-This is my personal site. Currently WIP so no deployment.
+This is my personal site. Currently deployed on Vercel and at https://devinrank.in
