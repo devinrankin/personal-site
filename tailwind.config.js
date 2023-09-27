@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "primary": "var(--text-primary)",
-        "secondary": "var(--text-secondary)",
-        "primary-bg": "var(--bg-primary)",
-        "secondary-bg": "var(--bg-secondary)",
+        "primary": "var(--primary)",
+        "secondary": "var(--secondary)",
+        "typography": "var(--text-primary)",
+        "bold-typography": "var(--text-secondary)"
       },
       transitionDuration: {
         "600": "600ms"

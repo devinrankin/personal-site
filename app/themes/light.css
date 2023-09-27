@@ -1,0 +1,6 @@
+html[data-theme='light'] {
+    --primary: #dbced4;
+    --secondary: #e1cebc;
+    --text-primary: #000000;
+    --text-secondary: #ef6a80;
+}

@@ -4,12 +4,12 @@
 
 @layer base {
   html {
-    --text-primary: #ef6a80;
-    --text-secondary: #ececec;
-    --bg-primary: #23232e;
-    --bg-secondary: #141418;
+    --primary: #23232e;
+    --secondary: #141418;
+    --text-primary: #ececec;
+    --text-secondary: #ef6a80;
   }
-  @import 'styles/themes/light';
+  @import 'themes/light';
 }
 
 html {
@@ -20,23 +20,15 @@ html {
   --transition-speed: 600ms;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 h1 {
   font-size: 32px;
   font-weight: 800;
-  color: var(--text-secondary)
+  color: var(--text-primary)
 }
 
 body {
   color: black;
-  background-color: var(--bg-primary);
+  background-color: var(--primary);
   margin: 0;
   padding: 0;
 }
@@ -51,7 +43,7 @@ p {
 }
 
 ::-moz-selection {
-  background: var(--text-primary);
+  background: var(--text-secondary);
   color: var(--text-secondary);
 }
 
