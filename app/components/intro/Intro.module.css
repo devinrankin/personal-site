@@ -8,6 +8,7 @@
 .content {
     display: flex;
     flex-direction: column;
+    margin: 9rem;
 }
 
 .intro {
@@ -25,13 +26,13 @@
     display: flex;
     flex-direction: row;
     width: 50rem;
-    height: 5rem;
+    height: 3rem;
 }
 
 .icon {
     color: var(--text-primary);
     text-decoration: none;
-    padding: 0.5rem;
+    margin: 0.5rem;
     transition: 200ms ease-in-out;
 }
 
