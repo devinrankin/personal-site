@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Bold from '../Bold'
+import Bold from '../bold'
 import Card from './card/Card'
 
 
@@ -30,7 +30,7 @@ export default function About({}: Props) {
         <div className='p-16 sm:ml-60'>
             <Card title='about me' variants={createVariants(240, 0, 1.5)}>
                 <p className='pt-4 text-typography'>
-                    hello, my name is <Bold>devin</Bold>. im a <Bold>computer science</Bold> major at temple university. to learn more about me, keep <Bold>scrolling</Bold> or use the <Bold>bar</Bold> on the left side to navigate!
+                    in high school, i was introduced to computer science through game development, and i instantly fell in love. i enrolled into <Bold>temple university</Bold> majoring in computer science. there, my passion for computing grew.
                 </p>
             </Card>
             <Card title='interests' variants={createVariants(-240, 0, 1.5)}>
@@ -47,6 +47,7 @@ export default function About({}: Props) {
             <Card title='hobbies' variants={createVariants(200, 0, 1.5)}>
                 <ul className='list-disc pl-8 pt-4 text-typography'>
                     <li>video games</li>
+                    <li>learning chinese</li>
                     <li>anime</li>
                     <li>manga</li>
                     <li>music</li>
@@ -56,7 +57,7 @@ export default function About({}: Props) {
             <Card title='experience' variants={createVariants(-200, 0, 1.5)}>
                 <ul className='list-disc pl-8 pt-4 text-typography'>
                     <li><Bold>temple university</Bold>
-                        <ul className='list-disc pl-8'>
+                        <ul className='list-disc pl-2 md:pl-8'>
                             <li>teaching assistant - introduction to java</li>
                             <li>teaching assistant - low-level system programming</li>
                             <li>computer science peer tutor</li>
