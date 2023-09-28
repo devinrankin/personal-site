@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import styles from './Navbar.module.css'
 import { motion, Variants } from 'framer-motion'
-import { changeTheme } from '../../../utils/helper'
 
 // FA icons for navbar
  
