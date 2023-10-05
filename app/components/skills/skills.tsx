@@ -32,7 +32,7 @@ export default function Skills({}: Props) {
         className="flex flex-wrap justify-center gap-2 text-lg max-w-[53rem] mb-28"
         variants={variants}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
         viewport={{ once: true }}
       >
         {skillsData.map((skill, index) => (
