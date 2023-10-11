@@ -59,6 +59,24 @@ export const navbarData = {
   },
 } as const;
 
+export const interestsData = [
+  "web development",
+  "ui/ux development",
+  "color theory",
+  "typography",
+  "computer networking",
+  "machine learning",
+] as const;
+
+export const hobbiesData = [
+  "video games",
+  "learning chinese",
+  "anime",
+  "manga",
+  "music",
+  "cooking",
+] as const;
+
 export const timelineData = {
   "august 2020":
     "attended my first semester at temple university majoring in computer science",
@@ -66,4 +84,4 @@ export const timelineData = {
   "may 2023": "software engineer intern at coventry life settlements",
   "august 2023":
     "hired as a cs peer tutor & teaching assistant for low-level systems programming",
-};
+} as const;

@@ -29,7 +29,7 @@ const createVariants = (
 
 export default function About({}: Props) {
   return (
-    <section className="min-h-screen max-h-max flex flex-col" id="about">
+    <section className="min-h-screen flex flex-col" id="about">
       <div className="px-5 py-16 sm:ml-60">
         <Card title="about me" variants={createVariants(240, 0, 1.5)}>
           <p className="pt-4 text-typography">
@@ -44,6 +44,8 @@ export default function About({}: Props) {
           <ul className="list-disc pl-8 text-typography">
             <li>web development</li>
             <li>ui/ux design</li>
+            <li>color theory</li>
+            <li>typography</li>
             <li>computer networking</li>
             <li>machine learning</li>
           </ul>
