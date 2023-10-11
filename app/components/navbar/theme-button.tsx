@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 
 type Props = {};
 
+const hoverEffect = {};
+
 export default function ThemeButton({}: Props) {
   return (
     <Link href="#" className={styles.link}>
