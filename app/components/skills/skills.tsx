@@ -26,7 +26,7 @@ const variants = {
 
 export default function Skills({}: Props) {
   return (
-    <section className="flex flex-col items-center text-center text-typography">
+    <section className="flex flex-col text-center text-typography" id="skills">
       <SectionHeading>my skills</SectionHeading>
       <motion.ul
         className="flex flex-wrap justify-center gap-2 text-lg max-w-[53rem] mb-28"

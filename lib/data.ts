@@ -18,6 +18,8 @@ export const skillsData = [
   "Firebase",
   "Framer Motion",
   "C",
+  "C#",
+  "Vue.js"
 ] as const;
 
 export const navbarData = {

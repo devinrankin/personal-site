@@ -24,22 +24,22 @@ export default function Intro({}: Props) {
   return (
     <section className="h-screen m-0 flex flex-row" id="intro">
       <motion.div
-        className="flex flex-col m-36 ml-0 w-full sm:m-60"
+        className="flex flex-col mt-36 ml-0 w-full sm:mt-60"
         variants={dropIn}
         initial="hidden"
         animate="visible"
       >
-        <p className="w-full sm:text-[4vw] block text-[10vw]">
+        <p className="w-full block text-[10vw] sm:text-[3.8vw]">
           hi, im <span className="font-black text-bold-typography">devin</span>.
         </p>
-        <p className="w-full sm:text-[3.7vw] block text-[10vw]">
+        <p className="w-full sm:text-[3.8vw] block text-[10vw]">
           a senior{" "}
           <span className="font-black text-bold-typography">
             computer science
           </span>{" "}
           major
         </p>
-        <p className="w-full sm:text-[3.7vw] block text-[10vw]">
+        <p className="w-full sm:text-[3.8vw] block text-[10vw]">
           at{" "}
           <span className="font-black text-bold-typography">
             temple university

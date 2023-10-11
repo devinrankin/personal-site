@@ -10,7 +10,7 @@ type Props = {
 export default function Card({ title, children, variants }: Props) {
   return (
     <motion.div
-      className="rounded-xl shadow-2xl flex flex-col bg-secondary text-bold-typography text-xl px-8 py-4 leading-8 mt-12 max-w-[45rem] md:ml-32 md:w-1/2"
+      className="rounded-xl shadow-2xl flex flex-col bg-secondary text-bold-typography text-xl px-8 py-4 leading-8 mt-12 max-w-[45rem] md:w-2/3"
       variants={variants}
       initial="hidden"
       whileInView="visible"

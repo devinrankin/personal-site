@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <Navbar></Navbar>
-      <main>
+      <main className="flex flex-col items-center">
         <Intro></Intro>
         <About></About>
         <Skills></Skills>
