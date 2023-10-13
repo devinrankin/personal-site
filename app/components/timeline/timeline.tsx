@@ -39,8 +39,8 @@ export default function Timeline({}: Props) {
           viewport={{ once: true }}
         >
           {timelineData.map((data, index) => (
-            <motion.li variants={timelineVariants}>
-              <TimelineItem data={data} key={index}></TimelineItem>
+            <motion.li variants={timelineVariants} key={index}>
+              <TimelineItem data={data}></TimelineItem>
             </motion.li>
           ))}
         </motion.ul>
