@@ -19,7 +19,7 @@ export const skillsData = [
   "Framer Motion",
   "C",
   "C#",
-  "Vue.js"
+  "Vue.js",
 ] as const;
 
 export const navbarData = {
@@ -79,11 +79,75 @@ export const hobbiesData = [
   "cooking",
 ] as const;
 
-export const timelineData = {
-  "august 2020":
-    "attended my first semester at temple university majoring in computer science",
-  "january 2023": "hired as a teaching assistant for introduction to java",
-  "may 2023": "software engineer intern at coventry life settlements",
-  "august 2023":
-    "hired as a cs peer tutor & teaching assistant for low-level systems programming",
-} as const;
+const possibleTags = {
+  education: "edu",
+  experience: "exp",
+  development: "dev",
+};
+
+export type timelineElement = {
+  title: string;
+  date: string;
+  tag: string;
+  link: string;
+  content: string[];
+};
+
+export const timelineData: timelineElement[] = [
+  {
+    title: "began attending temple university",
+    date: "august 2020",
+    tag: possibleTags.education,
+    link: "none",
+    content: [],
+  },
+  {
+    title:
+      "began working as a teaching assistant for introduction to java (cis1068)",
+    date: "january 2023",
+    tag: possibleTags.experience,
+    link: "none",
+    content: [
+      "reinforced my learning of object oriented programming",
+      "served as a valuable experience for teaching information to students",
+    ],
+  },
+  {
+    title: "attended owlhacks spring 2023",
+    date: "february 2023",
+    tag: possibleTags.development,
+    link: "https://devpost.com/software/inquiry-ozy7jf",
+    content: [
+      "built inquiry, a multi-platform real-time messaging and reaction app for students to ask questions without the fear of public opinion",
+      "my teammate, jacob snarr, and i won! check out the project by clicking on the timeline box",
+    ],
+  },
+  {
+    title: "joined coventry life settlements as a software engineer intern",
+    date: "may 2023",
+    tag: possibleTags.experience,
+    link: "https://www.coventry.com/",
+    content: [
+      "worked on company systems written in c#, javascript, and visual basic",
+      "designed, developed, and implemented a streamlined employee onboarding process application",
+    ],
+  },
+  {
+    title:
+      "hired as a cs peer tutor and teaching assistant for low-level systems programming (cis2107)",
+    date: "august 2023",
+    tag: possibleTags.experience,
+    link: "none",
+    content: [],
+  },
+  {
+    title: "attended owlhacks fall 2023",
+    date: "september 2023",
+    tag: possibleTags.development,
+    link: "none",
+    content: [
+      'my team and i built "litter critters", an application that gameifies waste management in a pokemon go style!',
+      "click on the timeline box to check out the project",
+    ],
+  },
+];
