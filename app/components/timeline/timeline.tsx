@@ -16,8 +16,8 @@ const timelineVariants = {
     x: "0vw",
     opacity: 1,
     transition: {
-      duration: 1.5,
-      staggerChildren: 0.2,
+      duration: 1,
+      staggerChildren: 0.15,
     },
   },
 };
@@ -27,7 +27,7 @@ export default function Timeline({}: Props) {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="flex flex-col text-center"
+      className="flex flex-col text-center mb-28"
       id="timeline"
     >
       <SectionHeading>timeline</SectionHeading>
