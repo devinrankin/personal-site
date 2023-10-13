@@ -27,11 +27,11 @@ export default function Timeline({}: Props) {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="flex flex-col text-center mb-28"
+      className="flex flex-col text-center items-center mb-28"
       id="timeline"
     >
       <SectionHeading>timeline</SectionHeading>
-      <div className="border-l border-typography">
+      <div className="border-l border-typography sm:ml-48">
         <motion.ul
           variants={timelineVariants}
           initial="hidden"

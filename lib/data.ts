@@ -119,7 +119,7 @@ export const timelineData: timelineElement[] = [
     link: "https://devpost.com/software/inquiry-ozy7jf",
     content: [
       "built inquiry, a multi-platform real-time messaging and reaction app for students to ask questions without the fear of public opinion",
-      "my teammate, jacob snarr, and i won! check out the project by clicking on the timeline box",
+      "my teammate and i won! check out the project by clicking on the timeline box",
     ],
   },
   {
