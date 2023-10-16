@@ -22,7 +22,22 @@ export const skillsData = [
   "Vue.js",
 ] as const;
 
-export const navbarData = {
+export type navElement = {
+  home: navButton;
+  about: navButton;
+  skills: navButton;
+  projects: navButton;
+  blog: navButton;
+};
+
+export type navButton = {
+  name: string;
+  route: string;
+  path: string;
+  viewBox: string;
+};
+
+export const navbarData: navElement = {
   home: {
     name: "home",
     route: "/",
@@ -53,22 +68,18 @@ export const navbarData = {
     path: "M64 64C28.7 64 0 92.7 0 128V384c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V128c0-35.3-28.7-64-64-64H64zm16 64h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM64 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm80-176c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V144zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V240c0-8.8 7.2-16 16-16zM160 336c0-8.8 7.2-16 16-16H400c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H176c-8.8 0-16-7.2-16-16V336zM272 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM256 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H272c-8.8 0-16-7.2-16-16V240zM368 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM352 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H368c-8.8 0-16-7.2-16-16V240zM464 128h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V144c0-8.8 7.2-16 16-16zM448 240c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V240zm16 80h32c8.8 0 16 7.2 16 16v32c0 8.8-7.2 16-16 16H464c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16z",
     viewBox: "0 0 576 512",
   },
-  theme: {
-    name: "theme",
-    route: "",
-    path: "M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z",
-    viewBox: "0 0 512 512",
-  },
 } as const;
 
 export const interestsData = [
   "web development",
-  "ui/ux development",
+  "UI/UX development",
   "color theory",
   "typography",
   "computer networking",
   "machine learning",
 ] as const;
+
+const array = [1, 2, 3, 4];
 
 export const hobbiesData = [
   "video games",
@@ -89,8 +100,8 @@ export type timelineElement = {
   title: string;
   date: string;
   tag: string;
-  link: string;
-  content: string[];
+  link?: string;
+  content?: string[];
 };
 
 export const timelineData: timelineElement[] = [
@@ -98,56 +109,51 @@ export const timelineData: timelineElement[] = [
     title: "began attending temple university",
     date: "august 2020",
     tag: possibleTags.education,
-    link: "none",
-    content: [],
   },
   {
     title:
-      "began working as a teaching assistant for introduction to java (cis1068)",
+      "Began working as a Teaching Assistant for Introduction to Java (CIS 1068)",
     date: "january 2023",
     tag: possibleTags.experience,
-    link: "none",
     content: [
-      "reinforced my learning of object oriented programming",
-      "served as a valuable experience for teaching information to students",
+      "Reinforced my learning of Object Oriented Programming",
+      "Served as a valuable experience for teaching information to students",
     ],
   },
   {
-    title: "attended owlhacks spring 2023",
+    title: "Attended Owlhacks Spring 2023",
     date: "february 2023",
     tag: possibleTags.development,
     link: "https://devpost.com/software/inquiry-ozy7jf",
     content: [
-      "built inquiry, a multi-platform real-time messaging and reaction app for students to ask questions without the fear of public opinion",
-      "my teammate and i won! check out the project by clicking on the timeline box",
+      "Built Inquiry, a multi-platform real-time messaging and reaction app for students to ask questions without the fear of public opinion",
+      "My teammate and i won! Check out the project by clicking on the timeline box",
     ],
   },
   {
-    title: "joined coventry life settlements as a software engineer intern",
+    title: "Joined Coventry Life Settlements as a Software Engineer Intern",
     date: "may 2023",
     tag: possibleTags.experience,
     link: "https://www.coventry.com/",
     content: [
-      "worked on company systems written in c#, javascript, and visual basic",
-      "designed, developed, and implemented a streamlined employee onboarding process application",
+      "Worked on company systems written in C#, Javascript, and Visual Basic",
+      "Designed, developed, and implemented a streamlined employee onboarding process application",
     ],
   },
   {
     title:
-      "hired as a cs peer tutor and teaching assistant for low-level systems programming (cis2107)",
+      "Hired as a CS peer tutor and Teaching Assistant for Low-Level Systems Programming (CIS 2107)",
     date: "august 2023",
     tag: possibleTags.experience,
-    link: "none",
-    content: [],
   },
   {
-    title: "attended owlhacks fall 2023",
+    title: "Attended Owlhacks Fall 2023",
     date: "september 2023",
     tag: possibleTags.development,
-    link: "none",
+    link: "https://devpost.com/software/litter-critters",
     content: [
-      'my team and i built "litter critters", an application that gameifies waste management in a pokemon go style!',
-      "click on the timeline box to check out the project",
+      "My team and i built Litter Critters, an application that gameifies waste management in a Pokemon Go style!",
+      "Click on the timeline box to check out the project",
     ],
   },
 ];

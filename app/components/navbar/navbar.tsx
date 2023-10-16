@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { navbarData } from "@/lib/data";
+import { useTheme } from "next-themes";
 
 type Props = {};
 
@@ -21,19 +22,18 @@ const variants: Variants = {
 };
 
 export default function Navbar({}: Props) {
+  const { theme, setTheme } = useTheme();
+
   return (
     <motion.nav className="group fixed bg-primary border-bold-typography duration-[150ms] z-[1000] sm:top-0 sm:w-20 sm:h-screen sm:border-r-[2px] sm:border-t-0 sm:hover:w-64 bottom-0 w-screen h-20 border-t-[2px] ">
       <ul className="p-0 m-0 flex sm:flex-col items-center h-full list-none flex-row">
-        <li className="text-3xl m-4 select-none whitespace-nowrap overflow-hidden tracking-widest sm:inline hidden">
+        <li className="text-3xl m-4 select-none whitespace-nowrap overflow-hidden tracking-widest sm:inline hidden text-typography">
           <h1 className="inline group-hover:hidden">dr</h1>
           <h1 className="hidden group-hover:inline">devin rankin</h1>
         </li>
 
         {Object.entries(navbarData).map(([key, value]) => (
-          <li
-            key={key}
-            className={`w-full ${value.name == "theme" ? "mt-auto" : ""}`}
-          >
+          <li key={key} className={"w-full"}>
             <Link
               href={value.route}
               className="flex items-center h-20 no-underline text-typography duration-[600ms] hover:bg-secondary hover:text-bold-typography justify-center sm:justify-normal"

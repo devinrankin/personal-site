@@ -5,13 +5,14 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         "primary": "var(--primary)",
         "secondary": "var(--secondary)",
-        "typography": "var(--text-primary)",
-        "bold-typography": "var(--text-secondary)"
+        "typography": "var(--typography)",
+        "bold-typography": "var(--bold-typography)"
       },
       transitionDuration: {
         "600": "600ms"

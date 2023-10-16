@@ -16,7 +16,9 @@ export default function Card({ title, children, variants }: Props) {
       whileInView="visible"
       viewport={{ once: true }}
     >
-      <h1 className="text-2xl pt-4 text-bold-typography font-black">{title}</h1>
+      <h1 className="text-2xl pt-4 text-bold-typography font-black capitalize">
+        {title}
+      </h1>
       <div className="text-typography text-xl mb-4">{children}</div>
     </motion.div>
   );

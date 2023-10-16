@@ -4,6 +4,7 @@ import SectionHeading from "../section-heading";
 import { timelineData } from "@/lib/data";
 import TimelineItem from "./timeline_item";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -40,7 +41,13 @@ export default function Timeline({}: Props) {
         >
           {timelineData.map((data, index) => (
             <motion.li variants={timelineVariants} key={index}>
-              <TimelineItem data={data}></TimelineItem>
+              {data.link ? (
+                <Link href={data.link} target="_blank">
+                  <TimelineItem data={data}></TimelineItem>
+                </Link>
+              ) : (
+                <TimelineItem data={data}></TimelineItem>
+              )}
             </motion.li>
           ))}
         </motion.ul>

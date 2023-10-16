@@ -29,17 +29,17 @@ export default function Intro({}: Props) {
         initial="hidden"
         animate="visible"
       >
-        <p className="w-full block text-[10vw] sm:text-[3.7vw]">
+        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
           hi, im <span className="font-black text-bold-typography">devin</span>.
         </p>
-        <p className="w-full block text-[10vw] sm:text-[3.7vw]">
+        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
           a senior{" "}
           <span className="font-black text-bold-typography">
             computer science
           </span>{" "}
           major
         </p>
-        <p className="w-full block text-[10vw] sm:text-[3.7vw]">
+        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
           at{" "}
           <span className="font-black text-bold-typography">
             temple university

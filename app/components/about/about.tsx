@@ -33,22 +33,22 @@ export default function About({}: Props) {
     <section className="flex flex-col items-center mb-28" id="about">
       <Card title="about me" variants={createVariants(240, 0, 1.5)}>
         <p className="pt-4 text-typography">
-          in high school, i was introduced to computer science through game
-          development, and i instantly fell in love. i enrolled into{" "}
-          <Bold>temple university</Bold> majoring in computer science. there, my
+          In high school, I was introduced to computer science through game
+          development, and I instantly fell in love. I enrolled into{" "}
+          <Bold>Temple University</Bold> majoring in computer science. There, my
           passion for computing grew.
         </p>
       </Card>
       <Card title="interests" variants={createVariants(-240, 0, 1.5)}>
-        <p className="pt-4 text-typography">currently interested in</p>
-        <ul className="list-disc pl-8 text-typography">
+        <p className="pt-4 text-typography">Currently interested in</p>
+        <ul className="list-disc pl-8 text-typography capitalize">
           {interestsData.map((interest, index) => (
             <li key={index}>{interest}</li>
           ))}
         </ul>
       </Card>
       <Card title="hobbies" variants={createVariants(200, 0, 1.5)}>
-        <ul className="list-disc pl-8 pt-4 text-typography">
+        <ul className="list-disc pl-8 pt-4 text-typography capitalize">
           {hobbiesData.map((hobby, index) => (
             <li key={index}>{hobby}</li>
           ))}
