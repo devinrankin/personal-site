@@ -18,10 +18,10 @@ html {
 }
 
 [data-theme='light'] {
-  --primary: #E1E7ED;
-  --secondary: #C4C9DC;
-  --typography: #2F313F;
-  --bold-typography: #685FCD;
+  --primary: #F3F3F3;
+  --secondary: #DDDDDF;
+  --typography: #23232e;
+  --bold-typography: #ef6a80;
 }
 
 h1 {

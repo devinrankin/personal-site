@@ -3,7 +3,6 @@ import Navbar from "./components/navbar/navbar";
 import Intro from "./components/intro/intro";
 import About from "./components/about/about";
 import Skills from "./components/skills/skills";
-import Experience from "./components/experience/experience";
 import Projects from "./components/projects/projects";
 import Timeline from "./components/timeline/timeline";
 import { ThemeProvider } from "next-themes";
@@ -17,6 +16,7 @@ export default function Home() {
         <About></About>
         <Skills></Skills>
         <Timeline></Timeline>
+        <Projects></Projects>
       </main>
     </div>
   );

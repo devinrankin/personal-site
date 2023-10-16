@@ -2,7 +2,7 @@
 import React from "react";
 import SectionHeading from "../section-heading";
 import { skillsData } from "@/lib/data";
-import { motion, spring, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 type Props = {};
 
@@ -37,7 +37,7 @@ export default function Skills({}: Props) {
       >
         {skillsData.map((skill, index) => (
           <motion.li
-            className="border border-white/[0.1] rounded-xl px-5 py-3"
+            className="border border-typography/[0.1] rounded-xl px-5 py-3"
             key={index}
             variants={variants}
           >
