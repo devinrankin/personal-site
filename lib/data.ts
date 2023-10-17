@@ -106,7 +106,7 @@ export type timelineElement = {
 
 export const timelineData: timelineElement[] = [
   {
-    title: "began attending temple university",
+    title: "Began attending Temple University",
     date: "august 2020",
     tag: possibleTags.education,
   },
@@ -127,7 +127,7 @@ export const timelineData: timelineElement[] = [
     link: "https://devpost.com/software/inquiry-ozy7jf",
     content: [
       "Built Inquiry, a multi-platform real-time messaging and reaction app for students to ask questions without the fear of public opinion",
-      "My teammate and i won! Check out the project by clicking on the timeline box",
+      "My teammate and I won! Check out the project by clicking on the timeline box",
     ],
   },
   {
@@ -152,7 +152,7 @@ export const timelineData: timelineElement[] = [
     tag: possibleTags.development,
     link: "https://devpost.com/software/litter-critters",
     content: [
-      "My team and i built Litter Critters, an application that gameifies waste management in a Pokemon Go style!",
+      "My team and I built Litter Critters, an application that gameifies waste management in a Pokemon Go style!",
       "Click on the timeline box to check out the project",
     ],
   },
