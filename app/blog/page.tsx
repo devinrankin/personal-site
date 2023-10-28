@@ -1,6 +1,4 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 type Props = {};
@@ -23,9 +21,9 @@ export default function page({}: Props) {
         </svg>
       </div>
       <Link href="/">
-        <motion.div className="rounded-xl bg-typography px-4 py-1 mt-4 cursor-pointer hover:scale-110">
+        <div className="rounded-xl bg-typography px-4 py-1 mt-4 cursor-pointer hover:scale-110">
           <p className="text-bold-typography">Back to main</p>
-        </motion.div>
+        </div>
       </Link>
     </main>
   );
