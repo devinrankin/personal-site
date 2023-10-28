@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import localFont from "next/font/local";
 import Head from "next/head";
 
