@@ -16,12 +16,12 @@ export default function TimelineItem({ data }: Props) {
   return (
     <div className="mt-8 flex flex-col justify-center select-none">
       <div className="rounded-full bg-primary w-4 h-4 -ml-2 border-2 absolute border-bold-typography"></div>
-      <div className="flex flex-col items-start px-8 py-4 text-start w-2/3 ml-10 bg-secondary rounded-xl duration-[200ms] hover:scale-105 ease-in-out">
+      <div className="flex flex-col items-start pl-8 pb-4 text-start w-2/3 ml-10 bg-secondary rounded-xl duration-[200ms] hover:scale-105 ease-in-out">
         <div className="flex flex-row w-full  sm:last:ml-auto">
-          <p className="inline text-typography opacity-70 text-sm capitalize">
+          <p className="inline text-typography opacity-70 text-sm capitalize mt-4">
             {data.date}
           </p>
-          <div className="inline bg-typography text-bold-typography p-1 rounded-xl ml-auto text-sm">
+          <div className="inline bg-typography text-bold-typography p-1 rounded-bl-xl rounded-tr-xl ml-auto text-sm h-1/2">
             {data.tag}
           </div>
         </div>

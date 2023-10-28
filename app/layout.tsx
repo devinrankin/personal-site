@@ -38,9 +38,7 @@ export default function RootLayout({
       <Head>
         <link rel="icon" href="../public/favicon.png" />
       </Head>
-      <body className={ceraRound.className}>
-        {children}
-      </body>
+      <body className={ceraRound.className}>{children}</body>
     </html>
   );
 }
