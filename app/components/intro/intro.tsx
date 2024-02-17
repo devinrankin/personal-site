@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import PageLoadCard from "../page-load-card";
+import { scrollToSection } from "@/lib/sectionScrolling";
 
 type Props = {};
 
@@ -23,7 +24,7 @@ const dropIn = {
 
 export default function Intro({}: Props) {
   return (
-    <section className="h-screen m-0 flex flex-row" id="home">
+    <section className="h-screen m-0 flex flex-col" id="home">
       <motion.div
         className="flex flex-col w-full m-36 sm:m-60 sm:ml-0"
         variants={dropIn}
@@ -157,6 +158,29 @@ export default function Intro({}: Props) {
             </Link>
           </li>
         </ul>
+      </motion.div>
+      <motion.div
+        className="w-full flex items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+        }}
+        onClick={() => scrollToSection("about")}
+      >
+        <motion.svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          className="w-7 h-9"
+          animate={{
+            y: [0, 10, 0],
+            transition: { ease: "linear", repeat: Infinity, duration: 1 },
+          }}
+        >
+          <path
+            fill="currentColor"
+            d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+          />
+        </motion.svg>
       </motion.div>
     </section>
   );
