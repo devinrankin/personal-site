@@ -37,7 +37,7 @@ export default function PageLoadCard({}: Props) {
     <AnimatePresence>
       {!removed && (
         <motion.div
-          className="fixed top-0 right-0 bg-secondary z-50 rounded-xl w-96 cursor-pointer m-4"
+          className="fixed top-0 right-0 bg-secondary z-50 rounded-xl sm:w-96 cursor-pointer m-4"
           id="notif-card"
           onClick={() => setRemoved(true)}
           initial={{ x: "110%" }}
