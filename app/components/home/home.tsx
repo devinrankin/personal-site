@@ -28,7 +28,7 @@ export default function Intro({}: Props) {
       id="home"
     >
       <motion.div
-        className="flex flex-col w-full  mt-36 sm:m-60 sm:ml-0"
+        className="flex flex-col w-full  mt-36 sm:m-60 sm:mb-44 sm:ml-0"
         variants={dropIn}
         initial="hidden"
         animate="visible"
