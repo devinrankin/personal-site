@@ -5,6 +5,7 @@ import { timelineData } from "@/lib/data";
 import TimelineItem from "./timeline_item";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Note from "./note";
 
 type Props = {};
 
@@ -28,11 +29,12 @@ export default function Timeline({}: Props) {
     <motion.section
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="flex flex-col text-center items-center mb-28"
+      className="flex flex-col text-center first:items-center mb-28"
       id="timeline"
     >
       <SectionHeading>timeline</SectionHeading>
-      <div className="border-l border-typography sm:ml-48">
+      <Note />
+      <div className="border-l border-typography">
         <motion.ul
           variants={timelineVariants}
           initial="hidden"
@@ -40,14 +42,8 @@ export default function Timeline({}: Props) {
           viewport={{ once: true }}
         >
           {timelineData.map((data, index) => (
-            <motion.li variants={timelineVariants} key={index}>
-              {data.link ? (
-                <Link href={data.link} target="_blank">
-                  <TimelineItem data={data}></TimelineItem>
-                </Link>
-              ) : (
-                <TimelineItem data={data}></TimelineItem>
-              )}
+            <motion.li variants={timelineVariants} key={index} className="">
+              <TimelineItem data={data} />
             </motion.li>
           ))}
         </motion.ul>
