@@ -37,6 +37,10 @@ h1 {
   color: var(--text-primary)
 }
 
+section {
+  scroll-margin: 2.5rem;
+}
+
 body {
   color: black;
   background-color: var(--primary);

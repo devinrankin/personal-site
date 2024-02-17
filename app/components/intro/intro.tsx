@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import PageLoadCard from "../page-load-card";
 
 type Props = {};
 
@@ -22,7 +23,7 @@ const dropIn = {
 
 export default function Intro({}: Props) {
   return (
-    <section className="h-screen m-0 flex flex-row" id="intro">
+    <section className="h-screen m-0 flex flex-row" id="home">
       <motion.div
         className="flex flex-col w-full m-36 sm:m-60 sm:ml-0"
         variants={dropIn}

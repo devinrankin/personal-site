@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { navbarData } from "@/lib/data";
 import { useTheme } from "next-themes";
+import { scrollToSection } from "@/lib/sectionScrolling";
 
 type Props = {};
 
@@ -34,9 +35,9 @@ export default function Navbar({}: Props) {
 
         {Object.entries(navbarData).map(([key, value]) => (
           <li key={key} className={"w-full"}>
-            <Link
-              href={value.route}
-              className="flex items-center h-20 no-underline text-typography duration-[600ms] hover:bg-secondary hover:text-bold-typography justify-center sm:justify-normal"
+            <button
+              className="flex items-center h-20 no-underline text-bold-typography duration-[600ms] hover:bg-secondary hover:text-bold-typography justify-center sm:justify-normal w-full"
+              onClick={() => scrollToSection(value.route)}
             >
               <svg
                 aria-hidden="true"
@@ -61,7 +62,7 @@ export default function Navbar({}: Props) {
               >
                 {value.name}
               </motion.span>
-            </Link>
+            </button>
           </li>
         ))}
       </ul>

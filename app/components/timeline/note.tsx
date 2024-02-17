@@ -12,6 +12,7 @@ export default function Note({}: Props) {
         viewBox="0 0 512 512"
         whileInView={{
           scale: [1, 1.2, 1],
+          rotate: [0, 7, -7, 0],
           transition: { duration: 0.5, delay: 0.3 },
         }}
       >

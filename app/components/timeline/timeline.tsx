@@ -34,6 +34,7 @@ export default function Timeline({}: Props) {
     >
       <SectionHeading>timeline</SectionHeading>
       <Note />
+      {/* Timeline bar */}
       <div className="border-l border-typography">
         <motion.ul
           variants={timelineVariants}
@@ -48,6 +49,7 @@ export default function Timeline({}: Props) {
           ))}
         </motion.ul>
       </div>
+      {/* Timeline bar */}
     </motion.section>
   );
 }

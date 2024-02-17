@@ -2,7 +2,7 @@
 import React from "react";
 import SectionHeading from "../section-heading";
 import { skillsData } from "@/lib/data";
-import { motion, spring, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 
 type Props = {};
 

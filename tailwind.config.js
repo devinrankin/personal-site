@@ -18,6 +18,7 @@ module.exports = {
         "600": "600ms"
       }
     },
+    borderOpacity: ({theme}) => theme('opacity')
   },
   plugins: [],
 }
