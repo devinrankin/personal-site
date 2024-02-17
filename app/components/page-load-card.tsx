@@ -48,7 +48,7 @@ export default function PageLoadCard({}: Props) {
           whileTap={{ scale: 1.05 }}
           exit={{ opacity: 0, transition: { duration: 0.3 } }}
         >
-          <div className="flex flex-row items-center justify-center gap-4 p-4 pb-2 border-b border-typography shadow-lg">
+          <div className="flex flex-row items-center justify-center gap-4 p-4 pb-2 shadow-lg">
             <Image
               src="/pfp.jpg"
               alt="pfp"
@@ -71,7 +71,7 @@ export default function PageLoadCard({}: Props) {
               />
             </svg>
           </div>
-          <div className="p-4 text-sm">
+          <div className="p-4 pt-0 text-sm">
             {loaded === 1 ? (
               <>
                 hey{" "}
