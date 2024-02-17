@@ -36,7 +36,7 @@ export default function Navbar({}: Props) {
         {Object.entries(navbarData).map(([key, value]) => (
           <li key={key} className={"w-full"}>
             <button
-              className="flex items-center h-20 no-underline text-bold-typography duration-[600ms] hover:bg-secondary hover:text-bold-typography justify-center sm:justify-normal w-full"
+              className="flex items-center h-20 no-underline hover:text-bold-typography text-typography duration-[600ms] hover:bg-secondary justify-center sm:justify-normal w-full"
               onClick={() => scrollToSection(value.route)}
             >
               <svg

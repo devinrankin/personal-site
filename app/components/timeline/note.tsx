@@ -5,7 +5,7 @@ type Props = {};
 
 export default function Note({}: Props) {
   return (
-    <motion.div className="flex flex-row p-4 items-center space-x-5 text-start mb-10 bg-secondary rounded-xl duration-[200ms] ease-in-out shadow-lg">
+    <motion.div className="text-typography flex flex-row p-4 items-center space-x-5 text-start mb-10 bg-secondary rounded-xl duration-[200ms] ease-in-out shadow-lg">
       <motion.svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-8 h-8"

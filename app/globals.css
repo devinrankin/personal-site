@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  color: var(--typography);
+  min-width: 0;
 }
 
 html {
