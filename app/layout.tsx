@@ -25,7 +25,8 @@ const ceraRound = localFont({
 
 export const metadata: Metadata = {
   title: "div",
-  description: "",
+  description:
+    "Hi, I'm Devin (or div), a computer science major at Temple University.",
 };
 
 export default function RootLayout({
