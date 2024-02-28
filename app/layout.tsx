@@ -36,9 +36,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="../public/favicon.png" />
-      </Head>
       <body className={ceraRound.className}>{children}</body>
     </html>
   );
