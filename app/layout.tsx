@@ -24,7 +24,7 @@ const ceraRound = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "div",
+  title: "Devin Rankin",
   description:
     "Hi, I'm Devin (or div), a computer science major at Temple University.",
 };
