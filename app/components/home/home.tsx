@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/lib/sectionScrolling";
+import SpotifyWidget from "./SpotifyWidget";
 
 type Props = {};
 
@@ -33,23 +34,27 @@ export default function Intro({}: Props) {
         initial="hidden"
         animate="visible"
       >
-        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
-          hi, im <span className="font-black text-bold-typography">devin</span>.
-        </p>
-        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
-          a senior{" "}
-          <span className="font-black text-bold-typography">
-            computer science
-          </span>{" "}
-          major
-        </p>
-        <p className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
-          at{" "}
-          <span className="font-black text-bold-typography">
-            temple university
+        <h1 className="w-full block text-[10vw] sm:text-[3.7vw] text-typography">
+          <span className="block">
+            hi, im{" "}
+            <span className="font-black text-bold-typography">devin</span>.
           </span>
-          .
-        </p>
+          <span className="block">
+            a senior{" "}
+            <span className="font-black text-bold-typography">
+              computer science
+            </span>{" "}
+            major
+          </span>
+          <span className="block">
+            at{" "}
+            <span className="font-black text-bold-typography">
+              temple university
+            </span>
+            .
+          </span>
+        </h1>
+
         <ul className="flex flex-row h-40 w-64 sm:w-96 sm:h-12 flex-wrap content-start">
           <li className="text-typography no-underline m-2 h-8 duration-[200ms] ease-in-out hover:scale-110">
             <Link href="https://github.com/devinrankin" target="_blank">
@@ -160,6 +165,7 @@ export default function Intro({}: Props) {
             </Link>
           </li>
         </ul>
+        <SpotifyWidget></SpotifyWidget>
       </motion.div>
       <motion.div
         className="w-full flex items-center justify-center"
