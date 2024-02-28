@@ -164,7 +164,6 @@ export default function Intro({}: Props) {
             </Link>
           </li>
         </ul>
-        <SpotifyWidget></SpotifyWidget>
       </motion.div>
       <motion.div
         className="w-full flex items-center justify-center"
