@@ -29,8 +29,8 @@ export default function Navbar({}: Props) {
     <motion.nav className="group fixed bg-primary border-bold-typography duration-[150ms] z-[1000] sm:top-0 sm:w-20 sm:h-screen sm:border-r-[2px] sm:border-t-0 sm:hover:w-64 bottom-0 w-screen h-20 border-t-[2px] ">
       <ul className="p-0 m-0 flex sm:flex-col items-center h-full list-none flex-row">
         <li className="text-3xl m-4 select-none whitespace-nowrap overflow-hidden tracking-widest sm:inline hidden text-typography">
-          <h1 className="inline group-hover:hidden">dr</h1>
-          <h1 className="hidden group-hover:inline">devin rankin</h1>
+          <div className="inline group-hover:hidden">dr</div>
+          <div className="hidden group-hover:inline">devin rankin</div>
         </li>
 
         {Object.entries(navbarData).map(([key, value]) => (
