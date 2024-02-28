@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { scrollToSection } from "@/lib/sectionScrolling";
-import SpotifyWidget from "./SpotifyWidget";
 
 type Props = {};
 
