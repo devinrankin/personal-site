@@ -1,7 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Head from "next/head";
 
 const ceraRound = localFont({
   src: [

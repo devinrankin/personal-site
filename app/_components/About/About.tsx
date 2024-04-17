@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Bold from "../bold";
-import Card from "./card/Card";
+import Bold from "../Bold";
+import Card from "./Card/Card";
 import { interestsData, hobbiesData } from "@/lib/data";
 
 type Props = {};

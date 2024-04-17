@@ -1,11 +1,11 @@
 "use client";
-import Navbar from "./components/navbar/navbar";
-import Intro from "./components/home/home";
-import About from "./components/about/about";
-import Skills from "./components/skills/skills";
-import Projects from "./components/projects/projects";
-import Timeline from "./components/timeline/timeline";
-import PageLoadCard from "./components/page-load-card";
+import Navbar from "./_components/Navbar/Navbar";
+import Intro from "./_components/Home/Home";
+import About from "./_components/About/About";
+import Skills from "./_components/Skills/Skills";
+import Projects from "./_components/Projects/Projects";
+import Timeline from "./_components/Timeline/Timeline";
+import PageLoadCard from "./_components/PageLoadToast";
 
 export default function Home() {
   return (

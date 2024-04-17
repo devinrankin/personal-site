@@ -1,11 +1,11 @@
 "use client";
 import React from "react";
-import SectionHeading from "../section-heading";
+import SectionHeading from "../SectionHeading";
 import { timelineData } from "@/lib/data";
-import TimelineItem from "./timeline_item";
+import TimelineItem from "./TimelineItem";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Note from "./note";
+import Note from "./Note";
 
 type Props = {};
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getPageLoads, setPageLoads } from "./../../lib/countPageLoads";
+import { getPageLoads, setPageLoads } from "../../lib/countPageLoads";
 import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 
