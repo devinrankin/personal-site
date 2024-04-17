@@ -18,7 +18,7 @@ export default function TimelineItem({ data }: Props) {
           <div className="capitalize text-sm opacity-70 inline mt-4 text-typography">
             {data.date}
           </div>
-          <div className="h-2/3 inline ml-auto rounded-bl-xl rounded-tr-xl bg-bold-typography text-sm px-1 py-[3px]">
+          <div className="h-2/3 inline ml-auto rounded-bl-xl rounded-tr-xl bg-bold-typography text-typography text-sm px-1 py-[3px]">
             {data.tag}
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function TimelineItem({ data }: Props) {
           <div className="capitalize text-sm opacity-70 inline mt-4 text-typography">
             {data.date}
           </div>
-          <div className="h-2/3 inline ml-auto rounded-bl-xl rounded-tr-xl bg-bold-typography text-sm px-1 py-[3px]">
+          <div className="h-2/3 inline ml-auto rounded-bl-xl rounded-tr-xl bg-bold-typography text-typography text-sm px-1 py-[3px]">
             {data.tag}
           </div>
         </div>

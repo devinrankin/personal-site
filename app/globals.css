@@ -12,24 +12,34 @@ html {
   font-family: 'Cera Round';
   font-weight: 700;
   --transition-speed: 600ms;
+}
+
+[data-theme='original'] {
   --primary: #23232e;
   --secondary: #141418;
   --typography: #ececec;
   --bold-typography: #ef6a80;
 }
 
-[data-theme='dark'] {
-  --primary: #23232e;
-    --secondary: #141418;
-    --typography: #ececec;
-    --bold-typography: #ef6a80;
+[data-theme='blue'] {
+  --primary: #1D3461;
+  --secondary: #1F487E;
+  --typography: #D0DBF1;
+  --bold-typography: #436FC7;
 }
 
-[data-theme='light'] {
-  --primary: #E1E7ED;
-  --secondary: #C4C9DC;
-  --typography: #2F313F;
-  --bold-typography: #685FCD;
+[data-theme='coffee'] {
+  --primary: #4C362F;
+  --secondary: #573E38;
+  --typography: #EFE8E6;
+  --bold-typography: #96705B;
+}
+
+[data-theme='jade'] {
+  --primary: #2E4D39;
+  --secondary: #365942;
+  --typography: #dde3e3;
+  --bold-typography: #ebb7af;
 }
 
 h1 {

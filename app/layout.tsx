@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import Providers from "./_providers/Providers";
 
 const ceraRound = localFont({
   src: [
@@ -35,7 +36,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={ceraRound.className}>{children}</body>
+      <body className={ceraRound.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

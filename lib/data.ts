@@ -161,3 +161,19 @@ export const timelineData: timelineElement[] = [
     content: ["My expected graduation date!"],
   },
 ];
+
+export const themes = [
+  {
+    title: "original",
+    color: "#EF6A80",
+  },
+  {
+    title: "blue",
+    color: "#ef6a80",
+  },
+  { title: "jade", color: "#558B68" },
+  {
+    title: "coffee",
+    color: "#96705B",
+  },
+];
