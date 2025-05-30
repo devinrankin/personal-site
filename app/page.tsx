@@ -17,7 +17,6 @@ export default function Home() {
         <About></About>
         <Skills></Skills>
         <Timeline></Timeline>
-        <Projects></Projects>
       </main>
     </>
   );
